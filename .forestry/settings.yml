@@ -9,6 +9,8 @@ sections:
   create: all
   templates:
   - master
+- type: heading
+  label: side
 - type: jekyll-posts
   label: Posts
   create: all
