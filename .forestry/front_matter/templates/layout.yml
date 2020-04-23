@@ -16,3 +16,8 @@ fields:
     schema:
       format: markdown
   label: Description
+- name: menus
+  type: text
+  config:
+    required: false
+  label: menus
