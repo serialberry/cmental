@@ -1,0 +1,33 @@
+.ftco-intro{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+.do-list{
+	margin: 0;
+	padding: 0;
+	li{
+		list-style: none;
+		font-size: 24px;
+		margin-bottom: 15px;
+		font-weight: 300;
+		a{}
+		span{
+			color: $primary;
+			font-size: 22px;
+		}
+	}
+}
+
+
+.ftco-gradient{
+	@include gradient-background();
+	.heading-section{
+		.subheading{
+			color: $white;
+		}
+		h2{
+			color: $white;
+		}
+	}
+}

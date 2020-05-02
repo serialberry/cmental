@@ -1,0 +1,18 @@
+<div class="blog-entry justify-content-end">
+  {%- assign bg-image = 'image_6.jpg' -%}
+    <a href="blog-single.html" class="block-20" style="background-image: url('/assets/images/{{ post.image | default: bg-image }} ');">
+    </a>
+    <div class="text p-4 float-right d-block">
+        <div class="d-flex align-items-center pt-2 mb-4">
+          <div class="one">
+            <span class="day">{{ post.date | date: "%-d" }}</span>
+        </div>
+        <div class="two">
+            <span class="yr">{{ post.date | date: "%Y" }}</span>
+            <span class="mos">{{ post.date | date: "%b"  }}</span>
+        </div>
+        </div>
+      <h3 class="heading mt-2"><a href="#">{{ post.title}}</a></h3>
+      <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+    </div>
+  </div>

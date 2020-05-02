@@ -19,6 +19,10 @@ group :jekyll_plugins do
   gem "jekyll-menus"
 end
 
+gem 'jekyll-sass-converter'
+gem "jekyll-assets"
+gem "jekyll-paginate-v2"
+
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
 install_if -> { RUBY_PLATFORM =~ %r!mingw|mswin|java! } do

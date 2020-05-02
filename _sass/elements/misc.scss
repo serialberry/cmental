@@ -1,0 +1,108 @@
+// USEFUL CODE
+.form-control {
+	height: 58px!important;
+	background: $white!important;
+	color: rgba(0,0,0,.9) !important;
+	font-size: 18px;
+	border-radius: 0px;
+	box-shadow: none!important;
+	border: transparent !important;
+	border: 1px solid rgba(0,0,0,.08) !important;
+	padding-right: 0;
+	padding-left: 0;
+	&:focus, &:active {
+		border-color: $primary;
+	}
+}
+textarea.form-control {
+	height: inherit!important;
+}
+
+
+.ftco-animate {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.bg-primary {
+	background: $primary!important;
+}
+
+
+
+
+.ftco-section {
+	padding: 7em 0;
+	position: relative;
+	@include media-breakpoint-down(sm){
+		padding: 6em 0;
+	}
+}
+
+.ftco-bg-dark {
+	background: #090808;
+}
+
+
+.ftco-footer {
+	font-size: 16px;
+	padding: 4em 0;
+	background: $primary;
+	h1.logo{
+		color: $white;
+		font-size: 30px;
+		font-weight: 300;
+	}
+	h2.location{
+		font-size: 24px;
+		color: rgba(255,255,255,.9);
+	}
+	.ftco-footer-widget {
+		ul{
+			li{
+				a{
+					span{
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+	p {
+		color: rgba($white, .7);
+	}
+	a {
+		color: rgba($white, .7);
+		&:hover {
+			color: $white;
+		}
+	}
+}
+
+
+.ftco-footer-social {
+	li {
+		list-style: none;
+		margin: 0 10px 0 0;
+		display: inline-block;
+		a {
+			height: 50px;
+			width: 50px;
+			display: block;
+			float: left;
+			background: rgba($white, .05);
+			border-radius: 50%;
+			position: relative;
+			span {
+				position: absolute;
+				font-size: 26px;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			&:hover {
+				color: $white;
+			}
+		}
+	}
+}

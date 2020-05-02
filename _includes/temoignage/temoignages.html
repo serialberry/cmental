@@ -1,0 +1,41 @@
+<section class="ftco-section testimony-section">
+    <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+            <div class="col-md-7 heading-section ftco-animate text-center">
+                <h3 class="subheading">Temoignage</h3>
+                <h2 class="mb-1">Nos meilleur clients</h2>
+            </div>
+        </div>
+        <div class="row ftco-animate">
+           
+            <div class="col-md-12">
+                <div class="carousel-testimony owl-carousel">
+                    {% for temoignage in site.temoignages %}
+                    <div class="item">
+                        <div class="testimony-wrap p-4 pb-5">
+                            <div class="text">
+                                <div class="line pl-5">
+                                    <p class="mb-4 pb-1">{{ temoignage.description }}</p>
+                                    <span class="quote d-flex align-items-center justify-content-center">
+                                        <i class="icon-quote-left"></i>
+                                    </span>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="user-img"
+                                        style="background-image: url('assets/images/{{ temoignage.image | default: person_1.jpg }}')">
+                                    </div>
+                                    <div class="ml-4">
+                                        <p class="name">{{ temoignage.nom }} </p>
+                                        <span class="position">{{ temoignage.type }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</section>

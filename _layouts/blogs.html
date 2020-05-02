@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<section class="hero-wrap js-fullheight" style="background-image: url('/assets/images/bg_3.jpg');">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+      <div class="col-md-9 ftco-animate text-center">
+        <h1 class="mb-3 bread">Our Blog</h1>
+        <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Blog</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="ftco-section bg-light">
+  <div class="container">
+    <div class="row d-flex">
+      {%- for post in paginator.posts -%}
+      <div class="col-md-4 d-flex ftco-animate">
+        {%- include post-item.html -%}
+      </div>
+
+      {%- endfor -%}
+    </div>
+    <div class="row mt-5">
+      <div class="col text-center">
+        <div class="block-27">
+          <ul>
+            {%- if paginator.previous_page_path -%}
+            <li><a href="{{ paginator.previous_page_path }}">&lt;</a></li>
+            {%- endif -%}
+            {%- for page in (1..paginator.total_pages) -%}
+            {%- if paginator.page == page  -%}
+            <li class="active"><span>{{ page }}</span></li>
+            {%- elsif page == 1 -%}
+            <li><a href="{{ paginator.previous_page_path | relative_url }}">{{ page }}</a></li>
+            {%- else -%}
+            <li><a href="{{  paginator.next_page_path | relative_url | replace: ':num', page }}">{{ page }}</a></li>
+            {%- endif -%}
+            {%- endfor -%}
+            {%- if paginator.next_page_path -%}
+            <li><a href="{{ paginator.next_page_path}}">&gt;</a></li>
+            {%- endif -%}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
