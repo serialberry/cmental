@@ -1,5 +1,6 @@
 ---
 layout: classes
+title: classes
 menus: 
     header:
         title: Proposition
