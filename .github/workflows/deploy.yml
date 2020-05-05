@@ -17,7 +17,8 @@ jobs:
     - name: repo-sync
       uses: wei/git-sync@v2
       with:
-        source_repo: "https://${{secrets.TOKEN}}@github.com/william-kandot/cmental-forrest.git"
+        source_repo: "https://github.com/william-kandot/cmental-forrest.git"
         source_branch: "master"
-        destination_repo: "https://${{secrets.TOKEN}}@github.com/serialberry/cmental.git"
+        destination_repo: "https://github.com/serialberry/cmental.git"
         destination_branch: "master"
+        github_token: ${{ secrets.TOKEN }}
