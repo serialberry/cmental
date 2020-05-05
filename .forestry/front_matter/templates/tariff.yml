@@ -19,3 +19,4 @@ fields:
   label: titre
 pages:
 - _tariffs/pro.md
+- _tariffs/sportif.md

@@ -1,7 +1,7 @@
 ---
-ordre: "3"
+ordre: 3
 nom: Professionel
-prix: "500"
+prix: 500
 unite: seance
 titre: C'est un gros titre
 
