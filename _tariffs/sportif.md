@@ -1,7 +1,7 @@
 ---
-ordre: 3
-nom: Professionel
-prix: 500
+ordre: 2
+nom: Sportif
+prix: 400
 unite: seance
 titre: C'est un gros titre
 
