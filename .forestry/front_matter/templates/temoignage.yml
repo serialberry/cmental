@@ -1,0 +1,19 @@
+---
+label: Temoignage
+hide_body: true
+fields:
+- type: number
+  name: ordre
+  label: ordre
+- type: text
+  name: nom
+  label: nom
+- type: text
+  name: type
+  label: type
+- type: textarea
+  name: description
+  label: description
+- type: file
+  name: image
+  label: image
