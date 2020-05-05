@@ -18,10 +18,17 @@ sections:
   templates:
   - tariff
 - type: directory
+  path: _services
+  label: Services
+  create: all
+  match: "**/*"
+- type: directory
   path: _temoignages
   label: Temoignages
   create: all
   match: "**/*"
+  templates:
+  - temoignage
 upload_dir: assets/images
 public_path: "/assets/images"
 front_matter_path: ''
