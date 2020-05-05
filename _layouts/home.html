@@ -3,62 +3,42 @@ layout: default
 ---
 
 <section class="hero-wrap js-fullheight" style="background-image: url('assets/images/pro-2.jpg');">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start">
-        <div class="col-md-8 ftco-animate">
-          <h1 class="typewrite mb-3" data-period="4000" data-type='[ "Inspiration For Joyful Living.", "Effective Therapy Against Stress.", "Flexibility is A Second Power."]'>
-            <span class="wrap"></span>
-          </h1>
-          <h2 class="mb-5">Sous-titre</h2>
-          <p><a href="#" class="btn btn-primary p-3 px-4">Commencer!</a></p>
-        </div>
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start">
+      <div class="col-md-8 ftco-animate">
+        <h1 class="typewrite mb-3" data-period="4000" data-type='[ "Gros titre 1.", "Gros titre 2.", "Gros titre 3."]'>
+          <span class="wrap"></span>
+        </h1>
+        <h2 class="mb-5">Sous-titre</h2>
+        <p><a href="#" class="btn btn-primary p-3 px-4">Commencer!</a></p>
       </div>
     </div>
-  </section>
-      
-      <!-- <section class="ftco-section ftco-intro" style="background-image: url(assets/images/intro.jpg);">
-          <div class="container">
-              <div class="row justify-content-end">
-                  <div class="col-md-6">
-                      <div class="heading-section ftco-animate">
-              <h2 class="mb-4">Why You Should Go To Yoga</h2>
-            </div>
-            <p class="ftco-animate">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-            <ul class="mt-5 do-list">
-                <li class="ftco-animate"><a href="#"><span class="ion-ios-checkmark-circle mr-3"></span>Yoga boosts brain power</a></li>
-                <li class="ftco-animate"><a href="#"><span class="ion-ios-checkmark-circle mr-3"></span>Yoga helps you to breathe better</a></li>
-                <li class="ftco-animate"><a href="#"><span class="ion-ios-checkmark-circle mr-3"></span>Yoga improves your strength</a></li>
-                <li class="ftco-animate"><a href="#"><span class="ion-ios-checkmark-circle mr-3"></span>Yoga helps you to focus</a></li>
-                <li class="ftco-animate"><a href="#"><span class="ion-ios-checkmark-circle mr-3"></span>Yoga helps give meaning to your day</a></li>
-            </ul>
-                  </div>
-              </div>
-          </div>
-      </section> -->
+  </div>
+</section>
 
-    {%- include services/services.html -%}
+{%- include services/services.html -%}
 
-    {%- include tariff/tariffs.html -%}
+{%- include tariff/tariffs.html -%}
 
-    {%- include temoignage/temoignages.html -%}
+{%- include temoignage/temoignages.html -%}
 
-  <section class="ftco-section bg-light">
-    <div class="container">
-      <div class="row justify-content-center mb-5 pb-3">
-        <div class="col-md-7 heading-section ftco-animate text-center">
-          <h3 class="subheading">Blog</h3>
-          <h2 class="mb-1">Recent Posts</h2>
-        </div>
-      </div>
-      <div class="row d-flex">
-        {%- for post in site.posts limit: 3 -%}
-
-        <div class="col-md-4 d-flex ftco-animate">
-          {%- include post-item.html -%}
-        </div>
-
-        {%- endfor -%}
+<section class="ftco-section bg-light">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-3">
+      <div class="col-md-7 heading-section ftco-animate text-center">
+        <h3 class="subheading">Blog</h3>
+        <h2 class="mb-1">Recent Posts</h2>
       </div>
     </div>
-  </section>
+    <div class="row d-flex">
+      {%- for post in site.posts limit: 3 -%}
+
+      <div class="col-md-4 d-flex ftco-animate">
+        {%- include post-item.html -%}
+      </div>
+
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
