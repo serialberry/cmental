@@ -1,0 +1,16 @@
+---
+label: Service
+hide_body: true
+fields:
+- type: number
+  name: ordre
+  label: ordre
+- type: text
+  name: titre
+  label: titre
+- type: text
+  name: description
+  label: description
+- type: file
+  name: image
+  label: image
