@@ -4,11 +4,6 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: directory
-  path: _temoignages
-  label: Temoignages
-  create: all
-  match: "**/*"
 - type: jekyll-pages
   label: Pages
   create: all
@@ -22,6 +17,11 @@ sections:
   match: "**/*"
   templates:
   - tariff
+- type: directory
+  path: _temoignages
+  label: Temoignages
+  create: all
+  match: "**/*"
 upload_dir: assets/images
 public_path: "/assets/images"
 front_matter_path: ''
