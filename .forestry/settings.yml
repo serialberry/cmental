@@ -10,6 +10,11 @@ sections:
 - type: jekyll-posts
   label: Posts
   create: all
+- type: directory
+  path: _tariffs
+  label: Tariffs
+  create: all
+  match: "**/*"
 upload_dir: assets/images
 public_path: "/assets/images"
 front_matter_path: ''
