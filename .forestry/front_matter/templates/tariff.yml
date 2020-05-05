@@ -1,0 +1,19 @@
+---
+label: Tariff
+hide_body: false
+fields:
+- type: number
+  name: ordre
+  label: ordre
+- type: text
+  name: nom
+  label: nom
+- type: number
+  name: prix
+  label: prix
+- type: text
+  name: unite
+  label: unite
+- type: text
+  name: titre
+  label: titre
