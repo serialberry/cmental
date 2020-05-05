@@ -1,13 +1,11 @@
 ---
 layout: contact
 title: Contactez-nous
-menus: 
-    header:
-        title: Contactez-nous
-        weight: 5
+menu:
+  header:
+    weight: 4
+
 ---
-
-
 bienvenue sur le site c-mental [jekyllrb.com](https://jekyllrb.com/)
 
 You can find the source code for Minima at GitHub:

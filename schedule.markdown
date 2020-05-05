@@ -1,10 +1,9 @@
 ---
 layout: schedule
 title: Programme
-menus: 
-    header:
-        title: Programme
-        weight: 6
+menu:
+  header:
+    weight: 5
 
 ---
 this is my home page, please see below

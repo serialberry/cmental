@@ -1,13 +1,12 @@
 ---
 layout: classes
 title: classes
-menus: 
-    header:
-        title: Proposition
-        weight: 3
+menu:
+  header:
+    title: Proposition
+    weight: 3
+
 ---
-
-
 bienvenue sur le site c-mental [jekyllrb.com](https://jekyllrb.com/)
 
 You can find the source code for Minima at GitHub:
