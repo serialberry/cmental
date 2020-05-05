@@ -21,3 +21,4 @@ jobs:
         source_branch: "master"
         destination_repo: "https://ae33fea3f06a1361631bb7c4fea64949830fb83e@github.com/serialberry/cmental.git"
         destination_branch: "master"
+        ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
