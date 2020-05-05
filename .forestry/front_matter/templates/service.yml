@@ -11,7 +11,7 @@ fields:
 - type: text
   name: description
   label: description
-- name: image
+- name: illustration
   type: file
   config:
     maxSize: 64
