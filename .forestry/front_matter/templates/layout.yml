@@ -21,3 +21,10 @@ fields:
   config:
     required: false
   label: menus
+- name: gros_titres
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Gros Titres
