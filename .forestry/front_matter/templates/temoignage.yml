@@ -14,6 +14,8 @@ fields:
 - type: textarea
   name: description
   label: description
-- type: file
-  name: image
-  label: image
+- name: id_photo
+  type: file
+  config:
+    maxSize: 64
+  label: ID Photo
