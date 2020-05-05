@@ -5,6 +5,6 @@ type: Client
 description: Attribution is appreciated and allows contributors to gain exposure.
   Copy the text below or embed a credit badge.
 image: portrait-1.jpg
-id_photo: ''
+id_photo: "/assets/images/portrait-1.jpg"
 
 ---
