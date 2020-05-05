@@ -19,3 +19,5 @@ fields:
   config:
     maxSize: 64
   label: ID Photo
+pages:
+- _temoignages/robert-collin.md
