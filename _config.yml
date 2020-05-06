@@ -36,6 +36,7 @@ github_username:  jekyll
 plugins:
   - jekyll-feed
   - jekyll-paginate-v2
+  - jekyll-menus
 
 pagination:
     enabled: true
