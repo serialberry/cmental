@@ -15,13 +15,15 @@
 
 	.navbar-brand {
 		color: $black;
+		line-height: 1;
 		span{
 			color: $primary;
-			font-size: 28px;
+			line-height: 1;
 		}
 		&:hover, &:focus{
 			color: $black;
 		}
+
 		@include media-breakpoint-down(md){
 			color: $white;
 			.icon2-cheval {
