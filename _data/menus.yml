@@ -1,0 +1,28 @@
+---
+header:
+    -
+        url: /
+        title: Acceuil
+        identifier: Acceuil
+        weight: 1
+    -
+        url: /Proposition
+        title: Proposition
+        identifier: Proposition
+        weight: 2
+    -
+        url: /blogs
+        title: Blogs
+        identifier: API
+        weight: 3
+    -
+        url: /contact
+        title: Contactez nous
+        identifier: API
+        weight: 3
+    -
+        url: /about
+        title: A propos
+        identifier: about
+        weight: 4
+---

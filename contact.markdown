@@ -1,9 +1,6 @@
 ---
 layout: contact
 title: Contactez-nous
-menu:
-  header:
-    weight: 4
 
 ---
 bienvenue sur le site c-mental [jekyllrb.com](https://jekyllrb.com/)

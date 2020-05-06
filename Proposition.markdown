@@ -1,11 +1,6 @@
 ---
 layout: classes
-title: classes
-menu:
-  header:
-    title: Proposition
-    weight: 3
-
+title: Proposition
 ---
 bienvenue sur le site c-mental [jekyllrb.com](https://jekyllrb.com/)
 
