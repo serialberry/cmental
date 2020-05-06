@@ -16,7 +16,7 @@ jobs:
     steps:
     - name: repo-sync
       uses: wei/git-sync@v2
-      if: contains(github.GITHUB_REPOSITORY , 'cmental-forrest')
+      if: contains(GITHUB_REPOSITORY , 'cmental-forrest')
       with:
         source_repo: "https://${{secrets.PAT}}@github.com/william-kandot/cmental-forrest.git"
         source_branch: "master"
