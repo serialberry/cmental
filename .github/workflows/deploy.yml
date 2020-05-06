@@ -16,7 +16,7 @@ jobs:
     steps:
     - name: repo-sync
       uses: wei/git-sync@v2
-      if: ${{secrets.PAT}} != ${{ null }}
+      if: ${{secrets.PAT != null }}
       with:
         source_repo: "https://${{secrets.PAT}}@github.com/william-kandot/cmental-forrest.git"
         source_branch: "master"
