@@ -1,24 +1,28 @@
-# This is a basic workflow to help you get started with Actions
+name: Jekyll site CI
 
-name: CI
-
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 on:
   push:
     branches: [ master ]
   pull_request:
-# File: .github/workflows/repo-sync.yml
+    branches: [ master ]
 
 jobs:
-  repo-sync:
+  build:
     runs-on: ubuntu-latest
     steps:
-    - name: repo-sync
-      uses: wei/git-sync@v2
-      if: contains( ${{env.GITHUB_REPOSITORY}} , 'cmental-forrest')
-      with:
-        source_repo: "https://${{secrets.PAT}}@github.com/william-kandot/cmental-forrest.git"
-        source_branch: "master"
-        destination_repo: "https://${{secrets.PAT}}@github.com/serialberry/cmental.git"
-        destination_branch: "master"
+    - uses: actions/checkout@v2
+    - name: Build the site in the jekyll/builder container
+      run: |
+        docker run \
+        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+        jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+    - name: Deploy to destination repository
+      run: |
+        git clone https://${{secrets.PAT}}@github.com/serialberry/cmental.git target
+        rm target
+        copy ${{ github.workspace }}/_site target
+        git add target
+        git commit -m "Automatic publish from cmental website"
+        git push target master
+
+
