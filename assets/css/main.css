@@ -2501,6 +2501,10 @@ textarea.form-control { height: inherit !important; }
 
 .bg-primary { background: #151111 !important; }
 
+.blog-content h2 { margin-bottom: 1rem !important; margin-top: 3em !important; }
+
+.blog-content h2:first-child { margin-bottom: 1rem !important; margin-top: 1rem !important; }
+
 .ftco-section { padding: 7em 0; position: relative; }
 
 @media (max-width: 767.98px) { .ftco-section { padding: 6em 0; } }
